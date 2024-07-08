@@ -3,40 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Review Blog</title>
+    <title>Book Review Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    body {
+        background-image: url('data:image/jpeg;base64,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');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
+    }
+</style>
 <body>
     <header>
-        <h1>Book Review Blog</h1>
+        <img class="logo" src="logo.png" alt="logo">
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booklist.html">Books</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
     </header>
-
     <main>
-        <section id="reviews">
-            <article>
-                <h2>Book Title 1</h2>
-                <p><strong>Author:</strong> Author Name</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-            <article>
-                <h2>Book Title 2</h2>
-                <p><strong>Author:</strong> Author Name</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-            <!-- Add more book reviews here -->
-        </section>
-    </main>
+        <h1>Welcome to the Book Review Website</h1>
+        <p>Your source for the best book reviews and recommendations.</p>
 
+    
+    </main>
     <footer>
-        <p>&copy; 2024 Book Review Blog. All rights reserved.</p>
+        &copy; Book Review Website
     </footer>
 </body>
 </html>
