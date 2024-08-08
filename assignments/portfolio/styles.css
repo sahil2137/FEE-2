@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.masthead {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #1abc9c;
+}
+
+.masthead .masthead-heading {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.masthead .masthead-subheading {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.page-section {
+    padding: 100px 0;
+}
+
+.page-section h2.section-heading {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.page-section h3.section-subheading {
+    font-size: 1.25em;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(26, 188, 156, 0.9);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.portfolio-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.portfolio-item:hover .portfolio-hover {
+    opacity: 1;
+}
+
+.testimonial-item {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonial-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.footer {
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.btn-social {
+    font-size: 1.5em;
+}
